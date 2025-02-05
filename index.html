@@ -7,7 +7,17 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="quiz-container">
+
+    <!-- Password Entry Section -->
+    <div id="login-container">
+        <h2>Enter Password to Start the Quiz</h2>
+        <input type="password" id="password" placeholder="Enter password">
+        <button onclick="checkPassword()">Submit</button>
+        <p id="error" style="color: red;"></p>
+    </div>
+
+    <!-- Quiz Section (Hidden Until Login) -->
+    <div id="quiz-container" style="display: none;">
         <h2>Grade 7 Math Reviewer</h2>
         <img id="question-image" src="" alt="Question Image" style="display: none;">
         <p id="question"></p>
@@ -15,6 +25,29 @@
         <p>Score: <span id="score">0</span></p>
     </div>
 
-    <script src="script.js"></script>
+    <script>
+        function checkPassword() {
+            const password = document.getElementById("password").value;
+            const correctPassword = "math123"; // Change this to your desired password
+
+            if (password === correctPassword) {
+                localStorage.setItem("authenticated", "true"); // Store authentication state
+                document.getElementById("login-container").style.display = "none"; // Hide login
+                document.getElementById("quiz-container").style.display = "block"; // Show quiz
+            } else {
+                document.getElementById("error").innerText = "Incorrect password!";
+            }
+        }
+
+        // Prevent direct access to the quiz without logging in
+        window.onload = function () {
+            if (localStorage.getItem("authenticated") === "true") {
+                document.getElementById("login-container").style.display = "none";
+                document.getElementById("quiz-container").style.display = "block";
+            }
+        };
+    </script>
+
+    <script src="script.js"></script> <!-- Your existing quiz script -->
 </body>
 </html>
