@@ -1,5 +1,93 @@
 const questions = [
     {
+        question: "Which of the following correctly describes the number 3/4 as a decimal and as a percentage?",
+        image: "", 
+        options: [
+            { text: "0.75 and 75%", image: "" },
+            { text: "0.25 and 25%", image: "" },
+            { text: "0.50 and 50%", image: "" },
+            { text: "0.85 and 85%", image: "" }
+        ],
+        answer: 0
+    },
+    {
+        question: "Sarah ate 5/8 of a pizza. How can the amount of pizza Sarah ate be expressed as a decimal and as a percentage?",
+        image: "", 
+        options: [
+            { text: "0.65 and 65%", image: "" },
+            { text: "0.625 and 62.5%", image: "" },
+            { text: "0.75 and 75%", image: "" },
+            { text: "0.60 and 60%", image: "" }
+        ],
+        answer: 1
+    },
+    {
+        question: "Which of the following lists places the numbers 1/2, 0.75, 5/6, and 0.4 in order from least to greatest on a number line?",
+        image: "", 
+        options: [
+            { text: "0.4, 1/2, 0.75, 5/6", image: "" },
+            { text: "1/2, 0.4, 5/6, 0.75", image: "" },
+            { text: "0.4, 0.75, 1/2, 5/6", image: "" },
+            { text: "5/6, 0.75, 1/2, 0.4", image: "" }
+        ],
+        answer: 0
+    },
+    {
+        question: "Four friends, Mike, Anna, Sarah, and John, each scored differently on a math test. Their scores as fractions are: Mike scored 3/4, Anna scored 5/6, Sarah scored 2/3, and John scored 7/8. Which of the following correctly orders their scores from least to greatest on a number line?",
+        image: "", 
+        options: [
+            { text: "Sarah, Mike, Anna, John", image: "" },
+            { text: "Sarah, Mike, John, Anna", image: "" },
+            { text: "Mike, Sarah, Anna, John", image: "" },
+            { text: "Sarah, Anna, Mike, John", image: "" }
+        ],
+        answer: 0
+    },
+    {
+        question: "A collection of distinct objects or elements is called?",
+        image: "", 
+        options: [
+            { text: "Set", image: "" },
+            { text: "Subset", image: "" },
+            { text: "Union", image: "" },
+            { text: "Integers", image: "" }
+        ],
+        answer: 0
+    },
+    {
+        question: "What is the cube root of 27?",
+        image: "", 
+        options: [
+            { text: "3", image: "" },
+            { text: "9", image: "" },
+            { text: "27", image: "" },
+            { text: "81", image: "" }
+        ],
+        answer: 0
+    },
+    {
+        question: "What is the product of 0.6 and 0.4?",
+        image: "", 
+        options: [
+            { text: "0.24", image: "" },
+            { text: "0.16", image: "" },
+            { text: "0.10", image: "" },
+            { text: "0.04", image: "" }
+        ],
+        answer: 0
+    },
+    {
+        question: "Emma is baking cookies and needs to measure out different amounts of ingredients. She adds 1/2 cup of sugar, 1/3 cup of brown sugar, and 1/4 cup of butter to her mixing bowl. How much ingredient has she used in total?",
+        image: "", 
+        options: [
+            { text: "7/12 cup", image: "" },
+            { text: "1 cup", image: "" },
+            { text: "5/6 cup", image: "" },
+            { text: "2 cups", image: "" }
+        ],
+        answer: 2
+    },
+    {
         question: "Maria is planning her monthly budget. She allocates her income as follows: 30% for rent, 20% for groceries, 15% for transportation, 10% for savings, and the remaining amount for entertainment and other expenses. If Maria's total monthly income is ₱40,000, how much does she allocate for entertainment and other expenses?",
         image: "", 
         options: [
