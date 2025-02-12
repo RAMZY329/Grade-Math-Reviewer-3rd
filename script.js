@@ -1,5 +1,335 @@
 const questions = [
     {
+        question: "Maria is planning her monthly budget. She allocates her income as follows: 30% for rent, 20% for groceries, 15% for transportation, 10% for savings, and the remaining amount for entertainment and other expenses. If Maria's total monthly income is ₱40,000, how much does she allocate for entertainment and other expenses?",
+        image: "", 
+        options: [
+            { text: "₱12,000", image: "" },
+            { text: "₱10,000", image: "" },
+            { text: "₱14,000", image: "" },
+            { text: "₱16,000", image: "" }
+        ],
+        answer: 1
+    },
+    {
+        question: "Jorge is creating a financial plan for his monthly expenses. He plans to allocate his income as follows: 25% for rent, 15% for utilities, 20% for groceries, 10% for transportation, 5% for entertainment, and the rest for savings. If Jorge's total monthly income is ₱50,000, how much will he allocate for savings?",
+        image: "", 
+        options: [
+            { text: "₱7,500", image: "" },
+            { text: "₱10,000", image: "" },
+            { text: "₱12,500", image: "" },
+            { text: "₱15,000", image: "" }
+        ],
+        answer: 2
+    },
+    {
+        question: "Which of the following best describes what a 'rate' is?",
+        image: "", 
+        options: [
+            { text: "The total distance traveled by an object", image: "" },
+            { text: "The amount of time it takes to complete a task", image: "" },
+            { text: "A ratio that compares two different quantities, often involving time", image: "" },
+            { text: "The maximum speed an object can reach", image: "" }
+        ],
+        answer: 2
+    },
+    {
+        question: "Which of the following scenarios involves a rate?",
+        image: "", 
+        options: [
+            { text: "A car has a fuel tank capacity of 50 liters.", image: "" },
+            { text: "A sprinter runs 100 meters in 10 seconds.", image: "" },
+            { text: "A building is 100 meters tall.", image: "" },
+            { text: "A group of people bought 20 tickets for a concert.", image: "" }
+        ],
+        answer: 1
+    },
+    {
+        question: "A car travels 180 kilometers in 3 hours. What is the average speed of the car in kilometers per hour?",
+        image: "", 
+        options: [
+            { text: "30 km/h", image: "" },
+            { text: "45 km/h", image: "" },
+            { text: "60 km/h", image: "" },
+            { text: "90 km/h", image: "" }
+        ],
+        answer: 2
+    },
+    {
+        question: "A cyclist covers 120 kilometers in 5 hours. What is the average speed of the cyclist?",
+        image: "", 
+        options: [
+            { text: "15 km/h", image: "" },
+            { text: "20 km/h", image: "" },
+            { text: "24 km/h", image: "" },
+            { text: "30 km/h", image: "" }
+        ],
+        answer: 2
+    },
+    {
+        question: "If a person runs 10 kilometers in 50 minutes, what is their average speed in kilometers per hour?",
+        image: "", 
+        options: [
+            { text: "10 km/h", image: "" },
+            { text: "11 km/h", image: "" },
+            { text: "12 km/h", image: "" },
+            { text: "13 km/h", image: "" }
+        ],
+        answer: 2
+    },
+    {
+        question: "John is trying to understand two different types of rates for his monthly expenses. He has two options: Option 1: A subscription service charges ₱500 per month. Option 2: A different subscription service offers a yearly rate of ₱5,400. Which option is cheaper on a monthly basis, and how much does John save per month by choosing the cheaper option?",
+        image: "", 
+        options: [
+            { text: "Option 1 is cheaper; saves ₱100 per month", image: "" },
+            { text: "Option 2 is cheaper; saves ₱100 per month", image: "" },
+            { text: "Option 1 is cheaper; saves ₱50 per month", image: "" },
+            { text: "Option 2 is cheaper; saves ₱50 per month", image: "" }
+        ],
+        answer: 1
+    },
+    {
+        question: "A heptagon has three pairs of congruent angles. The first pair measures 125° each, the second pair measures 150° each, and the third pair measures 130° each. What is the measure of the 7th angle?",
+        image: "", 
+        options: [
+            { text: "30°", image: "" },
+            { text: "50°", image: "" },
+            { text: "80°", image: "" },
+            { text: "90°", image: "" }
+        ],
+        answer: 3
+    },
+    {
+        question: "What is 25% in decimal form?",
+        image: "", 
+        options: [
+            { text: "0.25", image: "" },
+            { text: "0.02", image: "" },
+            { text: "0.0025", image: "" },
+            { text: "0.002", image: "" }
+        ],
+        answer: 0
+    },
+    {
+        question: "What is 50% in fraction form?",
+        image: "", 
+        options: [
+            { text: "10/12", image: "" },
+            { text: "5/8", image: "" },
+            { text: "3/4", image: "" },
+            { text: "1/2", image: "" }
+        ],
+        answer: 3
+    },
+    {
+        question: "What is 0.06 in percent form?",
+        image: "", 
+        options: [
+            { text: "60%", image: "" },
+            { text: "6%", image: "" },
+            { text: "30%", image: "" },
+            { text: "3%", image: "" }
+        ],
+        answer: 1
+    },
+    {
+        question: "What is 0.125 in percent form?",
+        image: "", 
+        options: [
+            { text: "125%", image: "" },
+            { text: "12.5%", image: "" },
+            { text: "1.25%", image: "" },
+            { text: "0.125%", image: "" }
+        ],
+        answer: 1
+    },
+    {
+        question: "It is an interest paid only on the original amount of money called the principal.",
+        image: "", 
+        options: [
+            { text: "Discount", image: "" },
+            { text: "Commission", image: "" },
+            { text: "Simple interest", image: "" },
+            { text: "Rate", image: "" }
+        ],
+        answer: 2
+    },
+    {
+        question: "A decrease in the original price of an item is called __________.",
+        image: "", 
+        options: [
+            { text: "Rate", image: "" },
+            { text: "Percentage", image: "" },
+            { text: "Discount", image: "" },
+            { text: "Principal", image: "" }
+        ],
+        answer: 2
+    },
+    {
+        question: "A pair of shoes originally costs ₱3,200. During a sale, they are offered at a 20% discount. The sale price of the shoes is ₱2,560. What is the rate offered during the sale?",
+        image: "", 
+        options: [
+            { text: "20%", image: "" },
+            { text: "30%", image: "" },
+            { text: "40%", image: "" },
+            { text: "50%", image: "" }
+        ],
+        answer: 0
+    },
+    {
+        question: "A real estate agent earns a 15% commission on a house that sells for ₱250,000. How much commission does the agent earn?",
+        image: "", 
+        options: [
+            { text: "₱37,500", image: "" },
+            { text: "₱38,000", image: "" },
+            { text: "₱38,500", image: "" },
+            { text: "₱39,000", image: "" }
+        ],
+        answer: 0
+    },
+     {
+        question: "In geometry, constructions are a crucial part of the subject. They involve using a compass, straightedge, and pencil to create precise shapes and figures. By combining angles, measurements, and careful drawing, we can create a wide range of geometric forms. In this problem, we are given a picture that shows a construction in progress. Our task is to determine what is being constructed.",
+        image: "", 
+        options: [
+            { text: "A circle with an inscribed polygon", image: "" },
+            { text: "A circle with an inscribed regular polygon", image: "" },
+            { text: "A circle with a tangent line", image: "" },
+            { text: "A circle with an arc", image: "" }
+        ],
+        answer: 1
+    },
+    {
+        question: "Two angles are said to be supplementary when the sum of their measures is equal to?",
+        image: "", 
+        options: [
+            { text: "45 degrees", image: "" },
+            { text: "90 degrees", image: "" },
+            { text: "180 degrees", image: "" },
+            { text: "360 degrees", image: "" }
+        ],
+        answer: 2
+    },
+    {
+        question: "Which describes a linear pair?",
+        image: "", 
+        options: [
+            { text: "two adjacent angles", image: "" },
+            { text: "two adjacent angles and vertical angles", image: "" },
+            { text: "two adjacent angles and supplementary angles", image: "" },
+            { text: "two adjacent angles and complementary angles", image: "" }
+        ],
+        answer: 2
+    },
+    {
+        question: "Polygons are categorized according to the sizes of their interior angles. When all angles of a polygon are less than 180 degrees, it is called?",
+        image: "", 
+        options: [
+            { text: "Convex", image: "" },
+            { text: "Nonconvex", image: "" },
+            { text: "Regular", image: "" },
+            { text: "Irregular", image: "" }
+        ],
+        answer: 0
+    },
+    {
+        question: "What is the name of a regular polygon with all sides equal?",
+        image: "", 
+        options: [
+            { text: "Convex polygon", image: "" },
+            { text: "Non-Convex polygon", image: "" },
+            { text: "Regular polygon", image: "" },
+            { text: "Irregular polygon", image: "" }
+        ],
+        answer: 2
+    },
+    {
+        question: "In geometry, the sum of the interior angles of a polygon is given by the formula (n-2) × 180 degrees, where n is the number of sides of the polygon. Find the sum of the interior angles in a 7-gon.",
+        image: "", 
+        options: [
+            { text: "720°", image: "" },
+            { text: "900°", image: "" },
+            { text: "1080°", image: "" },
+            { text: "1260°", image: "" }
+        ],
+        answer: 1
+    },
+    {
+        question: "Given, Plane ABCDEFG has 7 sides. What is the sum of the interior angles of the given figure?",
+        image: "", 
+        options: [
+            { text: "720°", image: "" },
+            { text: "900°", image: "" },
+            { text: "1080°", image: "" },
+            { text: "1260°", image: "" }
+        ],
+        answer: 3
+    },
+    {
+        question: "Rommel wants to build a rectangular garden in his backyard. He needs to know how much fencing he will need to buy if his garden measures 5m by 8m. What is the perimeter of the garden?",
+        image: "", 
+        options: [
+            { text: "3m", image: "" },
+            { text: "13m", image: "" },
+            { text: "26m", image: "" },
+            { text: "40m", image: "" }
+        ],
+        answer: 2
+    },
+    {
+        question: "Which polygon has five sides?",
+        image: "", 
+        options: [
+            { text: "Heptagon", image: "" },
+            { text: "Hexagon", image: "" },
+            { text: "Pentagon", image: "" },
+            { text: "Quadrilateral", image: "" }
+        ],
+        answer: 2
+    },
+    {
+        question: "Which of the following is NOT a polygon?",
+        image: "", 
+        options: [
+            { text: "A", image: "" },
+            { text: "B", image: "" },
+            { text: "C", image: "" },
+            { text: "D", image: "" }
+        ],
+        answer: 2
+    },
+    {
+        question: "What is the sum of the measures of the interior angles of a triangle?",
+        image: "", 
+        options: [
+            { text: "180 degrees", image: "" },
+            { text: "120 degrees", image: "" },
+            { text: "90 degrees", image: "" },
+            { text: "45 degrees", image: "" }
+        ],
+        answer: 0
+    },
+    {
+        question: "A triangle has angles measuring 40, 40, and 70 degrees. What type of triangle is this?",
+        image: "", 
+        options: [
+            { text: "Right triangle", image: "" },
+            { text: "Isosceles triangle", image: "" },
+            { text: "Equilateral triangle", image: "" },
+            { text: "Scalene triangle", image: "" }
+        ],
+        answer: 1
+    },
+    {
+        question: "Two angles are supplementary when their sum is equal to?",
+        image: "", 
+        options: [
+            { text: "45 degrees", image: "" },
+            { text: "90 degrees", image: "" },
+            { text: "180 degrees", image: "" },
+            { text: "360 degrees", image: "" }
+        ],
+        answer: 2
+    },
+    {
         question: "Which of the following sampling techniques involves selecting every nth person from a list?",
         image: "", // Image for the question
         options: [
